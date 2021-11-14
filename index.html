@@ -31,53 +31,24 @@
     <link rel='stylesheet' href='css/structure.css'>
     <link rel='stylesheet' href='css/mall.css'>
     <link rel='stylesheet' href='css/custom.css'>
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- custom -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:400,100,400italic,700italic,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="animate.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+        integrity="sha512-k2WPPrSgRFI6cTaHHhJdc8kAXaRM4JBFEDo1pPGGlYiOyv4vnA0Pp0G5XMYYxgAPmtmv/IIaQA6n5fLAyJaFMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
 
 <body class="page button-flat layout-full-width if-disable no-content-padding no-shadows header-transparent header-fw minimalist-header-no sticky-header sticky-tb-color ab-hide subheader-both-left menu-link-color menuo-right menuo-no-borders mobile-tb-center mobile-side-slide mobile-mini-mr-lc tablet-sticky mobile-header-mini mobile-sticky">
     <div id="Wrapper">
         <div id="Header_wrapper">
-            <header id="Header">
-
-                <div id="Top_bar">
-                    <div class="container">
-                        <div class="column one">
-                            <div class="top_bar_left clearfix">
-                                <div class="logo">
-                                    <a id="logo" href="../../index-mall.html" title="BeMall - Betheme" data-height="60" data-padding="30"><img class="logo-main scale-with-grid" src="images/mall.png" data-retina="images/retina-mall.png" data-height="61"><img class="logo-sticky scale-with-grid" src="images/mall.png" data-retina="images/retina-mall.png" data-height="61"><img class="logo-mobile scale-with-grid" src="images/mall.png" data-retina="images/retina-mall.png" data-height="61"><img class="logo-mobile-sticky scale-with-grid" src="images/mall.png" data-retina="images/retina-mall.png" data-height="61"></a>
-                                </div>
-                                <div class="menu_wrapper">
-                                    <nav id="menu">
-                                        <ul id="menu-main-menu" class="menu menu-main">
-                                            <li>
-                                                <a href="../../index-mall.html"><span>Home</span></a>
-                                            </li>
-                                            <li class="current-menu-item">
-                                                <a href="shops.html"><span>Shops</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="services.html"><span>Services</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="events.html"><span>Events</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="contact.html"><span>Contact</span></a>
-                                            </li>
-                                        </ul>
-                                    </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a>
-                                </div>
-
-                            </div>
-                            <!-- <div class="top_bar_right">
-                                <div class="top_bar_right_wrapper">
-                                    <a href="https://1.envato.market/9ZxXY" class="action_button" target="_blank">Buy now <i class="icon-right-open"></i></a>
-                                </div>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-            </header>
+            
              <div style="height: 50vh;" id="Subheader">
                 <!-- <div class="container">
                     <div class="column one">
@@ -295,6 +266,49 @@
                 </div>
             </div>
         </div> -->
+
+        <div class="site__header island">
+            <div class="wrap">
+                <span id="animationSandbox" style="display: block;">
+                    <img src="brand-white.png" alt="">
+                </span>
+        
+            </div>
+        </div>
+
+        <main class="site__content island" role="content">
+            <div class="wrap">
+                <form>
+        
+                    <select style="display: inline;" class="input input--dropdown js--animations">
+        
+                        <optgroup label="Back Entrances">
+                            <option value="backInDown">backInDown</option>
+                            <option value="backInLeft">backInLeft</option>
+                            <option value="backInRight">backInRight</option>
+                            <option value="backInUp">backInUp</option>
+                        </optgroup>
+                        <optgroup label="Back Exits">
+                            <option value="backOutDown">backOutDown</option>
+                            <option value="backOutLeft">backOutLeft</option>
+                            <option value="backOutRight">backOutRight</option>
+                            <option value="backOutUp">backOutUp</option>
+        
+                        </optgroup>
+                        <optgroup label="Attention seekers">
+                            <option value="rubberBand">rubberBand</option>
+                            <option value="heartBeat">heartBeat</option>
+        
+        
+                        </optgroup>
+        
+                    </select>
+        
+                    <button style="border: 1px solid red;" class="butt js--triggerAnimation">Animate it</button>
+                </form>
+            </div>
+        </main>
+
          <footer id="Footer" class="clearfix">
             <!-- <div class="widgets_wrapper">
                 <div class="container">
@@ -426,6 +440,38 @@
     <script src="../../js/animations/animations.js"></script>
     <script src="../../js/translate3d.js"></script>
     <script src="../../js/scripts.js"></script>
+
+
+    <script>
+
+
+
+        function testAnim(x) {
+            $("#animationSandbox")
+                .removeClass()
+                .addClass(x + " animated")
+                .one(
+                    "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
+                    function () {
+                        $(this).removeClass();
+                    }
+                );
+        }
+
+        $(document).ready(function () {
+            $(".js--triggerAnimation").click(function (e) {
+                e.preventDefault();
+                var anim = $(".js--animations").val();
+                testAnim(anim);
+            });
+
+            $(".js--animations").change(function () {
+                var anim = $(this).val();
+                testAnim(anim);
+            });
+        });
+
+    </script>
 
 
 </body>
