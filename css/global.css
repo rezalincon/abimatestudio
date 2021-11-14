@@ -7480,10 +7480,10 @@ input[type="date"], input[type="email"], input[type="number"], input[type="passw
 	-webkit-box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.02);
 	box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.02)
 }
-input[type="date"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, select:focus, textarea:focus {
-	background-color: #E9F5FC!important;
+input[type="date"]:focus,select, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, select:focus,select:active, textarea:focus {
+	background-color: white;
 	border-color: #d5e5ee;
-	color: #1982C2
+	color: #000 !important;
 }
 /* Dividers */
 
