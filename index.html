@@ -43,6 +43,26 @@
         integrity="sha512-k2WPPrSgRFI6cTaHHhJdc8kAXaRM4JBFEDo1pPGGlYiOyv4vnA0Pp0G5XMYYxgAPmtmv/IIaQA6n5fLAyJaFMA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+        <style>
+            
+
+select.minimal {
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) .5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 2.5em;
+  background-repeat: no-repeat;
+}
+        </style>
+
 </head>
 
 <body class="page button-flat layout-full-width if-disable no-content-padding no-shadows header-transparent header-fw minimalist-header-no sticky-header sticky-tb-color ab-hide subheader-both-left menu-link-color menuo-right menuo-no-borders mobile-tb-center mobile-side-slide mobile-mini-mr-lc tablet-sticky mobile-header-mini mobile-sticky">
@@ -268,9 +288,10 @@
         </div> -->
 
         <div class="site__header island">
-            <center><h5 style="text-align: center;width:70%;margin-bottom: 70px; margin-top: 40px;" >Below are some awesome text animations choices that can be used in your web
-                project. We have handpicked some really
-                creative text animation that will take your website project to the next level.</h5></center>
+            <center><h4 style="text-align: center;width:70%; margin-top: 40px;" >Below are some awesome text animations choices that can be used in your web
+                project.</h4> 
+                <p style="margin-bottom: 70px;color:gray">We have handpicked some really
+                creative text animation <br> that will take your website project to the next level.</p></center>
             <div class="wrap">
                 <span id="animationSandbox" style="display: block;">
                     <img style="width:25%" src="vlogo.png" alt="">
@@ -283,7 +304,7 @@
             <div class="wrap">
                 <form>
         
-                    <select style="display: inline;" class="input input--dropdown js--animations">
+                    <select style="display: inline;" class="input input--dropdown js--animations minimal">
         
                         <optgroup label="Back Entrances">
                             <option value="backInDown">backInDown</option>
@@ -307,7 +328,7 @@
         
                     </select>
         
-                    <button style="border: 1px solid red;" class="butt js--triggerAnimation">Animate it</button>
+                    <button style="border: 3px solid red;" class="butt js--triggerAnimation">Animate it</button>
                 </form>
             </div>
         </main>
