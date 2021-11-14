@@ -817,9 +817,7 @@
   $RESET
 \*-----------------------------------*/
 
-body {
-  overflow-x: hidden;
-}
+
 
 *,
 :before,
@@ -981,12 +979,11 @@ html {
   -webkit-font-smoothing: antialiased;
   width: 100%;
 
-  overflow: hidden-x;
 
   /* Centering in The Unknown */
   text-align: center;
 }
-
+/* 
 @media (min-width: 650px) {
   html {
     height: 100%;
@@ -1005,7 +1002,7 @@ html {
     vertical-align: middle;
     max-width: 38rem;
   }
-}
+} */
 
 /*-----------------------------------*\
   $HEADER
