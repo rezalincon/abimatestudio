@@ -305,11 +305,11 @@ select.minimal {
             <center><h5 style="text-align: center;width:80%; margin-top: 10px;" >
                 We have handpicked some really
                 creative text animation that will take your website project to the next level.</h5>
-                <h4 style="margin-bottom: 60px;">TRY IT OUT BELOW!</h4>
+                <h4 style="margin-bottom: 60px;font-size:20px">TRY IT OUT BELOW!</h4>
             </center>
             <div class="wrap">
-                <span id="animationSandbox" style="display: block;">
-                    <img style="width:33%" src="vlogo.png" alt="">
+                <span  style="display: block;">
+                    <img id="animationSandbox" style="width:33%;z-index:10" src="vlogo.png" alt="">
                 </span>
         
             </div>
@@ -320,7 +320,20 @@ select.minimal {
                 <form>
         
                     <select style="display: inline;width: 40%; background-color: white;" class="input input--dropdown js--animations minimal">
-        
+                        <optgroup label="Attention seekers">
+                            <option value="rubberBand">rubberBand</option>
+                            <option value="heartBeat">heartBeat</option>
+                            <option value="animate__bounce">bounce</option>
+                            <option value="animate__flash">flash</option>
+                            <option value="animate__pulse">pulse</option>
+                            <option value="animate__shakeX">shakeX</option>
+                            <option value="animate__shakeY">shakeY</option>
+                            <option value="animate__headShake">headShake</option>
+                            <option value="animate__swing">swing</option>
+                            <option value="animate__tada">tada</option>
+                            <option value="animate__wobble">wobble</option>
+                            <option value="animate__jello">jello</option>
+                        </optgroup>
                         <optgroup label="Back Entrances">
                             <option value="backInDown">backInDown</option>
                             <option value="backInLeft">backInLeft</option>
@@ -334,11 +347,105 @@ select.minimal {
                             <option value="backOutUp">backOutUp</option>
         
                         </optgroup>
-                        <optgroup label="Attention seekers">
-                            <option value="rubberBand">rubberBand</option>
-                            <option value="heartBeat">heartBeat</option>
-        
-        
+                        
+                        <optgroup label="Bouncing entrances">
+                            <option value="animate__bounceIn">bounceIn</option>
+                            <option value="animate__bounceInDown">bounceInDown</option>
+                            <option value="animate__bounceInLeft">bounceInLeft</option>
+                            <option value="animate__bounceInRight">bounceInRight</option>
+                            <option value="animate__bounceInUp">bouncIntUp</option>
+                        
+                        </optgroup>
+                        <optgroup label="Bouncing exists">
+                            <option value="animate__bounceOut">bounceOut</option>
+                            <option value="animate__bounceOutDown">bounceOutDown</option>
+                            <option value="animate__bounceOutLeft">bounceOutLeft</option>
+                            <option value="animate__bounceOutRight">bounceOutRight</option>
+                            <option value="animate__bounceOutUp">bounceOutUp</option>
+
+                        </optgroup>
+                        <optgroup label="Fading entrances">
+                            <option value="animate__fadeIn">fadeIn</option>
+                            <option value="animate__fadeInDown">fadeInDown</option>
+                            <option value="animate__fadeInDownBig">fadeInDownBig</option>
+                            <option value="animate__fadeInLeft">fadeInLeft</option>
+                            <option value="animate__fadeInLeftBig">fadeInLeftBig</option>
+                            <option value="animate__fadeInUp">fadeInUp</option>
+                            <option value="animate__fadeInTopLeft">fadeInTopLeft</option>
+                            <option value="animate__fadeInTopRight">fadeInTopRight</option>
+                            <option value="animate__fadeInBottomLeft">fadeInBottomLeft</option>
+                            <option value="animate__fadeInBottomRight">fadeInBottomRight</option>
+                        </optgroup>
+                        <optgroup label="Fading exits">
+                            <option value="animate__fadeOut">fadeOut</option>
+                            <option value="animate__fadeOutDown">fadeOutDown</option>
+                            <option value="animate__fadeOutDownBig">fadeOutDownBig</option>
+                            <option value="animate__fadeOutLeft">fadeOutLeft</option>
+                            <option value="animate__fadeOutLeftBig">fadeOutLeftBig</option>
+                            <option value="animate__fadeOutUp">fadeOutUp</option>
+                            <option value="animate__fadeOutTopLeft">fadeOutTopLeft</option>
+                            <option value="animate__fadeOutTopRight">fadeOutTopRight</option>
+                            <option value="animate__fadeOutBottomLeft">fadeOutBottomLeft</option>
+                            <option value="animate__fadeOutBottomRight">fadeOutBottomRight</option>
+                        </optgroup>
+                        <optgroup label="Flippers">
+                            <option value="animate__flip">flip</option>
+                            <option value="animate__flipInX">flipInX</option>
+                            <option value="animate__flipInY">flipInY</option>
+                            <option value="animate__flipOutX">flipOutX</option>
+                            <option value="animate__flipOutY">flipOutY</option>
+                        </optgroup>
+                        <optgroup label="Lightspeed">
+                            <option value="animate__LightSpeedInRight">LightSpeedInRight</option>
+                            <option value="animate__LightSpeedInLeft">LightSpeedInleft</option>
+                            <option value="animate__LightSpeedOutRight">LightSpeedOutRight</option>
+                            <option value="animate__LightSpeedOutLeft">fLightSpeedOutLeft</option>
+                        </optgroup>
+                        <optgroup label="Rotating entrances">
+                            <option value="animate__rotateIn">rotateIn</option>
+                            <option value="animate__rotateInDownLeft">rotateInDownLeft</option>
+                            <option value="animate__rotateInDownRight">rotateInDownRight</option>
+                            <option value="animate__rotateInUpLeft">rotateInUpLeft</option>
+                            <option value="animate__rotateInUpRight">rotateInUpRight</option>
+                        </optgroup>
+                        <optgroup label="Rotating exits">
+                            <option value="animate__rotateOut">rotateOut</option>
+                            <option value="animate__rotateOutDownLeft">rotateOutDownLeft</option>
+                            <option value="animate__rotateOutDownRight">rotateOutDownRight</option>
+                            <option value="animate__rotateOutUpLeft">rotateOutUpLeft</option>
+                            <option value="animate__rotateOutUpRight">rotateOutUpRight</option>
+                        </optgrouOut>
+                        <optgroup label="Specials">
+                            <option value="animate__hinge">hinge</option>
+                            <option value="animate__jackInTheBox">jackInTheBox</option>
+                            <option value="animate__rollIn">rollIn</option>
+                            <option value="animate__rollOut">rollOut</option>
+                        </optgrouOut>
+                        <optgroup label="Zooming entrances">
+                            <option value="animate__zoomIn">zoomIn</option>
+                            <option value="animate__zoomInDown">zoomInDown</option>
+                            <option value="animate__zoomInLeft">zoomInLeft</option>
+                            <option value="animate__zoomInRight">zoomInRight</option>
+                            <option value="animate__zoomInUp">zoomInUp</option>
+                        </optgroup>
+                        <optgroup label="Zooming exists">
+                            <option value="animate__zoomOut">zoomOut</option>
+                            <option value="animate__zoomOutDown">zoomOutDown</option>
+                            <option value="animate__zoomOutLeft">zoomOutLeft</option>
+                            <option value="animate__zoomOutRight">zoomOutRight</option>
+                            <option value="animate__zoomOutUp">zoomOutUp</option>
+                        </optgroup>
+                        <optgroup label="Sliding entrances">
+                            <option value="animate__slideInDown">slideInDown</option>
+                            <option value="animate__slideInLeft">slideInLeft</option>
+                            <option value="animate__slideInRight">slideInRight</option>
+                            <option value="animate__slideInUp">slideInUp</option>
+                        </optgroup>
+                        <optgroup label="Sliding exits">
+                            <option value="animate__slideOutDown">slideOutDown</option>
+                            <option value="animate__slideOutLeft">slideOutLeft</option>
+                            <option value="animate__slideOutRight">slideOutRight</option>
+                            <option value="animate__slideOutUp">slideOutUp</option>
                         </optgroup>
         
                     </select>
@@ -409,7 +516,7 @@ select.minimal {
                                         <h2 style="font-weight: 700;text-transform: uppercase;font-size: 30px;">Send us a message</h2>
                                         <div>
                                             <h5>If you have any questions, feel free to call us!</h5>
-                                            <h4> 682-305-1320</h4>
+                                            <h4 class="animate__animated animate__fadeInLeft"> 682-305-1320</h4>
                                         </div>
                                     </div>
                                     <hr class="no_line" style="margin:0 auto 20px">
@@ -490,7 +597,7 @@ select.minimal {
         function testAnim(x) {
             $("#animationSandbox")
                 .removeClass()
-                .addClass(x + " animated")
+                .addClass(x + " animate__animated")
                 .one(
                     "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
                     function () {
