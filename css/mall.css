@@ -1161,9 +1161,19 @@ a.action_button{display:none;}
 #Header_wrapper, #Intro {
 	background-color: #a71725;
 }
+
 #Subheader {
 	background-color: rgba(247, 247, 247, 1);
 }
+
+@media (min-width: 768px) { 
+	#Header_wrappe{
+		height: 100vh;
+	}
+	#Subheader{
+		height: 100vh;
+	}
+ }
 .header-classic #Action_bar, .header-fixed #Action_bar, .header-plain #Action_bar, .header-split #Action_bar, .header-stack #Action_bar {
 	background-color: #292b33;
 }
@@ -2193,6 +2203,18 @@ form input.display-none {
 #Subheader {
 	padding: 240px 0 180px
 }
+@media (min-width: 500px) and (max-width: 700.98px){ 
+	#Subheader {
+	padding: 96px 0 180px;
+}
+
+ }
+
+ @media (max-width: 499.98px) { 
+	 #Subheader {
+	padding: 3px 0 180px;
+}
+  }
 #Footer .widgets_wrapper {
 	padding: 80px 0 65px
 }

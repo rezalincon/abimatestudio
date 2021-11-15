@@ -6287,9 +6287,7 @@ html, body {
 	body.minimalist-header.header-transparent #Header {
 		min-height: 0!important
 	}
-	.minimalist-header-no #Subheader {
-		padding: 80px 0!important
-	}
+	
 	/* Header | Overlay */
 	.header-overlay .overlay-menu-toggle {
 		top: 10px;
