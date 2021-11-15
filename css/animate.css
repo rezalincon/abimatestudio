@@ -863,18 +863,18 @@ textarea {
 }
 
 .butt {
-  border: 2px solid #00ffff !important;
+  border: 2px solid #ff0080 !important;
   line-height: 1.375;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   font-weight: 700;
   color: #fff;
   cursor: pointer;
-  background-color: #00ffff;
+  background-color: #ff0080;
 }
 .butt:hover{
-  background-color: #ff0080 !important;
-  border: 2px solid #ff0080 !important;
+  background-color: #00ffff !important;
+  border: 2px solid #00ffff !important;
 }
 
 .butt--primary {
