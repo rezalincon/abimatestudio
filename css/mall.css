@@ -2502,3 +2502,26 @@ p.flv_align_right, div.flv_align_right {
 #contactform #submit, #newsletterform input {
 	width: 100%;
 }
+
+/* responsive */
+
+#animationSandbox{
+	width:33%;z-index:10;
+}
+.a-input{
+	display: inline;width: 40%; background-color: white;
+}
+.a-but{
+	width: 20%;
+}
+@media (max-width: 575.98px) { 
+	#animationSandbox{
+	width:83%;
+}
+.a-input{
+	width: 90%; 
+}
+.a-but{
+	width: 50%;
+}
+ }
